@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <meta name="description" content="Developer portfolio optimized for GitHub Pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Portfolio home">PORTFOLIO</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about"></a>
+        <a href="#projects" data-i18n="nav.projects"></a>
+        <a href="#skills" data-i18n="nav.skills"></a>
+        <a href="#contact" data-i18n="nav.contact"></a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language switch">
+        <button id="lang-ko" class="lang-btn" type="button" data-lang-option="ko">KO</button>
+        <button id="lang-en" class="lang-btn" type="button" data-lang-option="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+          <h1 id="profile-name"></h1>
+          <p id="profile-title" class="hero-title"></p>
+          <p id="profile-summary" class="hero-summary"></p>
+          <div class="hero-actions">
+            <a id="github-cta" class="btn btn-primary" href="#" target="_blank" rel="noreferrer"></a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.contactCta"></a>
+          </div>
+        </div>
+        <aside class="highlight-panel" aria-labelledby="panel-title">
+          <h2 id="panel-title" data-i18n="hero.panelTitle"></h2>
+          <p id="panel-text"></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2 data-i18n="about.title"></h2>
+        <div id="about-content" class="about-content"></div>
+        <ul id="strength-list" class="strength-list"></ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="projects.title"></h2>
+          <p data-i18n="projects.subtitle"></p>
+        </div>
+        <div id="project-list" class="project-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 data-i18n="skills.title"></h2>
+        <div id="skills-grid" class="skills-grid"></div>
+        <p id="skills-level" class="skills-level"></p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-wrap">
+        <h2 data-i18n="contact.title"></h2>
+        <p data-i18n="contact.subtitle"></p>
+        <div class="contact-actions">
+          <a id="email-link" class="btn btn-primary" href="#"></a>
+          <a id="github-link" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer"></a>
+          <a id="linkedin-link" class="btn btn-ghost hidden" href="#" target="_blank" rel="noreferrer"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footer-copy"></p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>
